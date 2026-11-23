@@ -1,0 +1,36 @@
+{
+  "note": "Fictional sample books for the demo: one November close for an imaginary 14-person SaaS company. Not real financial data.",
+  "ledger": [
+    { "id": "l-01", "date": "2026-11-02", "vendor": "Amazon Web Services", "amount": -4210.55, "account": "1000 Checking" },
+    { "id": "l-02", "date": "2026-11-03", "vendor": "Stripe payout", "amount": 18900.00, "account": "1000 Checking" },
+    { "id": "l-03", "date": "2026-11-04", "vendor": "Gusto payroll", "amount": -31200.00, "account": "1000 Checking" },
+    { "id": "l-04", "date": "2026-11-05", "vendor": "WeWork", "amount": -2800.00, "account": "1000 Checking" },
+    { "id": "l-05", "date": "2026-11-09", "vendor": "Figma", "amount": -540.00, "account": "2100 Corporate Card" },
+    { "id": "l-06", "date": "2026-11-10", "vendor": "Stripe payout", "amount": 17240.00, "account": "1000 Checking" },
+    { "id": "l-07", "date": "2026-11-12", "vendor": "Delta Airlines", "amount": -1286.40, "account": "2100 Corporate Card" },
+    { "id": "l-08", "date": "2026-11-13", "vendor": "Acme Legal LLP", "amount": -3500.00, "account": "1000 Checking" },
+    { "id": "l-09", "date": "2026-11-17", "vendor": "Stripe payout", "amount": 19480.00, "account": "1000 Checking" },
+    { "id": "l-10", "date": "2026-11-18", "vendor": "Notion", "amount": -240.00, "account": "2100 Corporate Card" },
+    { "id": "l-11", "date": "2026-11-19", "vendor": "Gusto payroll", "amount": -31200.00, "account": "1000 Checking" },
+    { "id": "l-12", "date": "2026-11-20", "vendor": "Google Workspace", "amount": -336.00, "account": "2100 Corporate Card" },
+    { "id": "l-13", "date": "2026-11-24", "vendor": "Stripe payout", "amount": 21010.00, "account": "1000 Checking" },
+    { "id": "l-14", "date": "2026-11-25", "vendor": "OpenAI", "amount": -1872.31, "account": "2100 Corporate Card" },
+    { "id": "l-15", "date": "2026-11-27", "vendor": "Misc reimbursement - J. Chen", "amount": -184.20, "account": "1000 Checking" }
+  ],
+  "bank": [
+    { "id": "b-01", "date": "2026-11-02", "memo": "AMAZON WEB SERVICES AWS", "amount": -4210.55 },
+    { "id": "b-02", "date": "2026-11-03", "memo": "STRIPE TRANSFER", "amount": 18900.00 },
+    { "id": "b-03", "date": "2026-11-04", "memo": "GUSTO PAYROLL", "amount": -31200.00 },
+    { "id": "b-04", "date": "2026-11-05", "memo": "WEWORK 1101", "amount": -2800.00 },
+    { "id": "b-05", "date": "2026-11-09", "memo": "FIGMA INC", "amount": -540.00 },
+    { "id": "b-06", "date": "2026-11-10", "memo": "STRIPE TRANSFER", "amount": 17240.00 },
+    { "id": "b-07", "date": "2026-11-12", "memo": "DELTA AIR LINES", "amount": -1286.40 },
+    { "id": "b-08", "date": "2026-11-13", "memo": "ACME LEGAL LLP", "amount": -3500.00 },
+    { "id": "b-09", "date": "2026-11-17", "memo": "STRIPE TRANSFER", "amount": 19490.00 },
+    { "id": "b-10", "date": "2026-11-18", "memo": "NOTION LABS", "amount": -240.00 },
+    { "id": "b-11", "date": "2026-11-19", "memo": "GUSTO PAYROLL", "amount": -31200.00 },
+    { "id": "b-12", "date": "2026-11-24", "memo": "STRIPE TRANSFER", "amount": 21010.00 },
+    { "id": "b-13", "date": "2026-11-25", "memo": "OPENAI API", "amount": -1872.31 },
+    { "id": "b-14", "date": "2026-11-28", "memo": "BANK FEE - WIRE", "amount": -25.00 }
+  ]
+}

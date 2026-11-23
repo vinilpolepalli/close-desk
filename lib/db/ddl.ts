@@ -1,0 +1,75 @@
+export const SQLITE_DDL = [
+`CREATE TABLE IF NOT EXISTS categories (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  owner_id TEXT NOT NULL,
+  txn_id TEXT NOT NULL,
+  category TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS resolutions (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  owner_id TEXT NOT NULL,
+  ex_key TEXT NOT NULL,
+  resolution TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS steps (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  owner_id TEXT NOT NULL,
+  step TEXT NOT NULL,
+  done INTEGER NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS audit (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  owner_id TEXT NOT NULL,
+  step TEXT NOT NULL,
+  actor TEXT NOT NULL,
+  detail TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS rate_events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  owner_id TEXT NOT NULL,
+  kind TEXT NOT NULL,
+  at INTEGER NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS rate_events (
+  id SERIAL PRIMARY KEY,
+  owner_id TEXT NOT NULL,
+  kind TEXT NOT NULL,
+  at INTEGER NOT NULL
+)`,
+];
+
+export const PG_DDL = [
+`CREATE TABLE IF NOT EXISTS categories (
+  id SERIAL PRIMARY KEY,
+  owner_id TEXT NOT NULL,
+  txn_id TEXT NOT NULL,
+  category TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS resolutions (
+  id SERIAL PRIMARY KEY,
+  owner_id TEXT NOT NULL,
+  ex_key TEXT NOT NULL,
+  resolution TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS steps (
+  id SERIAL PRIMARY KEY,
+  owner_id TEXT NOT NULL,
+  step TEXT NOT NULL,
+  done INTEGER NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+`CREATE TABLE IF NOT EXISTS audit (
+  id SERIAL PRIMARY KEY,
+  owner_id TEXT NOT NULL,
+  step TEXT NOT NULL,
+  actor TEXT NOT NULL,
+  detail TEXT NOT NULL,
+  created_at TEXT NOT NULL
+)`,
+];
